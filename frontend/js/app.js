@@ -19,7 +19,7 @@
   // })
 
   app.controller('getWeblinkController',function($http,$scope){
-    $http.get("http://safeword.pedelen.com/report/")
+    $http.get("http://api.pedelen.com/report/")
     .then(function(res){
       $scope.reportList = res.data;
       // if(res.data.type == "1"){
