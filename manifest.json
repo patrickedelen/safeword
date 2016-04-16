@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "default_locale": "en",
+
+  "name": "Safeword",
+  "description": "This extension monitors the websites a user visits to alert them of security flaws; it catalogs insecure websites in a database with their violations.  The database is visualised at safeword.pedelen.com",
+  "version": "1.0",
+  "author": "Jack Baumann, Justin Hill, Patrick Edelen, Brian, and Nicholas for HackDFW",
+
+  "browser_action": {
+    "default_icon": { 
+      "16": "images/icon16.png",
+      "19": "images/icon.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    },
+    "default_title": "Safeword",
+    "default_popup": "popup.html"
+  },
+
+  "icons": { 
+    "16": "images/icon16.png",
+    "19": "images/icon.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
