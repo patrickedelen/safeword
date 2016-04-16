@@ -22,6 +22,11 @@
     $http.get("http://safeword.pedelen.com/report/")
     .then(function(res){
       $scope.reportList = res.data;
+      // if(res.data.type == "1"){
+      //   $scope.type = "fuck";
+      // }else{
+      //   $scope.type = "shit";
+      // }
     });
   })
 })();
