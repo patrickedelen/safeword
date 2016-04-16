@@ -4,6 +4,13 @@
 var Website = require('./models/website.js');
 
 module.exports = function(app) {
+	//allow cross region resource sharing
+	app.all('/report', function(req, res, next) {
+	  res.header("Access-Control-Allow-Origin", "*");
+	  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+	  next();
+	 });
+	
 	//report a website
 	app.post('/report', function(req, res) {
 		console.log('Request ' + req.body.url);
