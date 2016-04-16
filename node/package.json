@@ -1,0 +1,17 @@
+{
+  "name": "safeword",
+  "description": "Detect and report insecure websites",
+  "main": "sw.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~4.0.0",
+    "mongoose": "~3.8.1",
+    "body-parser": "~1.0.0",
+    "morgan": "~1.0.0"
+  },
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Patrick Edelen"
+}
