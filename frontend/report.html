@@ -5,6 +5,23 @@
       #text-area {
         padding: 100px;
       }
+      
+      button {
+      background-color: #4DB6AC;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
     </style>
      <!--Import Google Icon Font-->
      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -25,9 +42,6 @@
    </head>
 
    <body ng-app="safeword" >
-     <video class="responsive-video" controls id="bgvid" controls autoplay>
-       <source src="other/bg" type="video/mp4">
-     </video>
      <nav>
       <div class="nav-wrapper">
         <a href="#!" class="brand-logo center">Report a Website</a>
@@ -43,10 +57,10 @@
       </div>
     </nav>
      <div class="container" id="text-area">
-
+    
 
         <input type="text" name="FirstName" placeholder="URL">
-
+        
         <select class="selectBox" style="display: block">
           <option value="0">No Https</option>
           <option value="1">Insecure Form</option>
