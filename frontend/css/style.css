@@ -13,6 +13,11 @@ body{
   margin:0;
 }
 
+.card{
+  border-radius: 10px;
+  box-shadow: 2px 4px 12px #888888;
+}
+
 #ocean{
   position:absolute;
   width:100%;
