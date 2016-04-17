@@ -7,7 +7,8 @@ function reportError(url,violation){
 		url: SERVER_URL,
 		data: postBody,
 		cache: false,
-		dataType: "x-www-urlencoded",
+		contentType: "x-www-urlencoded",
+		dataType: "text",
 		success: function(data){
 			console.log("Successfull POST");
 		},

@@ -17,10 +17,14 @@
     "default_popup": "popup.html"
   },
 
+  "background": {
+	  "page": "util.js"
+  },
+
   "content_scripts": [{
     "matches": [ "http://*/*", "https://*/*" ],
     "all_frames": true,
-    "js": ["ajax.js",  "jquery.min.js", "main.js"]
+    "js": ["ajax.js",  "jquery.min.js", "util.js", "main.js"]
   }],
 
   "icons": {
@@ -31,6 +35,7 @@
   },
 
   "permissions": [
-    "activeTab"
+    "activeTab",
+	"storage"
   ]
 }
