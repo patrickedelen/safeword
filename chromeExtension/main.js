@@ -10,13 +10,19 @@ function myPluginLoadEvent(func) {
     }
 }
 
-var checkGlobalHTTPS = function(){
+var checkGlobalHTTPS = function(settings){
 	console.log(window.location.protocol);
 	if(!(window.location.protocol === "https:")) {
 		reportError(window.location.href,1);
+		if(settings.getBlockSites() == true){
+			window.location.href = (window.location.href).replace(/.*:\/\//, "https://");
+		}
 	}
 };
 
 console.log("loaded safeWord");
-checkGlobalHTTPS();
-console.log(window.onload);
+var globalSettings = new Settings(function(){
+	console.log(globalSettings);
+	checkGlobalHTTPS(globalSettings);
+});
+
