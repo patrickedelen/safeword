@@ -17,13 +17,12 @@ body{
   border-radius: 10px;
   box-shadow: 2px 4px 12px #888888;
 }
-
 video#bgvid {
     position: fixed;
     top: 50%;
     left: 50%;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 150%;
     width: auto;
     height: auto;
     z-index: -100;
@@ -33,4 +32,68 @@ video#bgvid {
     transform: translateX(-50%) translateY(-50%);
     background: url(polina.jpg) no-repeat;
     background-size: cover;
+}
+
+/* Bubbles */
+.bubbles {
+  position: fixed;
+  bottom: 0;
+  z-index: 5;
+  margin-right: 50px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: .50;
+  width: 40px;
+  height: 40px;
+  opacity: .20;
+  animation: up 4s infinite;
+}
+
+.bubble-2 {
+  left: 350px;
+  opacity: .21;
+  animation: up 2s infinite;
+}
+
+.bubble-3 {
+  left: 750px;
+  opacity: .30;
+  animation: up 5s infinite;
+}
+
+.bubble-4 {
+  left: 1150px;
+  opacity: .10;
+  animation: up 6s infinite;
+}
+
+.bubble-5 {
+  left: 50px;
+  opacity: .05;
+  animation: up 5s infinite;
+}
+
+.bubble-6 {
+  left: 300px;
+  opacity: .15;
+  animation: up 3s infinite;
+}
+
+.bubble-7 {
+  left: 670px;
+  opacity: .10;
+  animation: up 4s infinite;
+}
+
+.bubble-8 {
+  left: 1050px;
+  opacity: .20;
+  animation: up 3s infinite;
+}
+
+/* Bubbles Animation */
+@keyframes up {
+  100% {
+    transform: translateY(-800px);
+  }
 }
