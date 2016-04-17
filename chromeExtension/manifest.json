@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "Safeword",
+  "name": "Safe Word",
   "description": "This extension monitors the websites a user visits to alert them of security flaws; it catalogs insecure websites in a database with their violations.  The database is visualised at safeword.pedelen.com",
   "version": "1.0",
   "author": "Jack Baumann, Justin Hill, Patrick Edelen, Brian Richer, and Nicholas for HackDFW",
