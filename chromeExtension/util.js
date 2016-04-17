@@ -53,3 +53,9 @@ Settings.prototype.setBlockRequests = function(val){
 	this.blockHttpsSites = val;
 	chrome.storage.sync.set({"blockHttpRequests":val}, function(){});
 }
+
+var openReportPage = function(){
+	var win = $("window").open(SERVER_REPORT_URL, '_blank');
+	if(win)
+		win.focus();
+}
