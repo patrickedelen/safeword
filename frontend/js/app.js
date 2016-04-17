@@ -8,6 +8,7 @@ $(document).ready(function(){
     $http.get("http://api.pedelen.com/report/")
     .then(function(res){
 		console.log(res);
+
 		for(i in res.data){
 			var tempDate = new Date(res.data[i].date);
 			res.data[i].date = tempDate.getHours() + ":" + tempDate.getMinutes() + ", " + tempDate.toDateString();
@@ -15,4 +16,5 @@ $(document).ready(function(){
         $scope.reportList = res.data;
     });
   })
+
 })();
