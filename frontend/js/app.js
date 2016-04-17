@@ -1,3 +1,7 @@
+$(document).ready(function(){
+        $(".button-collapse").sideNav();
+});
+
 (function(){
   var app = angular.module('safeword',[]);
   //
