@@ -6,7 +6,6 @@
  -->
 <html>
   <head>
-    <title>Safe Word</title>
     <style>
       * {
         font-family: 'Roboto', sans-serif;
@@ -23,6 +22,9 @@
         background-color: #20b2aa;
         text-align: center;
       }
+      #logo {
+        margin: -7px auto;
+      }
       #box {
         margin: 10px auto;
         width: 90%;
@@ -33,6 +35,7 @@
       #search {
         margin: 10px auto;
         width: 95%;
+        text-align: center;
       }
       #checkbox {
         padding-left: 100px;
@@ -42,15 +45,17 @@
         margin: 10px auto;
         width: 95%;
       }
-      
     </style>
 
+    <title>Safe Word</title>
+
     <div id="title">
+      <img src="images/icon16Flip.png" id="logo" style="width:16px;height:16px">
       SAFE WORD
+      <img src="images/icon16.png" id="logo" style="width:16px;height:16px">
     </div>
-    <br>
     <div id="box">
-      <input type="text" id="search" name="search" value="Search for insecure websites"></input>
+      <input type="text" id="search" name="search" placeholder="Search for insecure websites"></input>
     </div>
     <div id="box">
       <input type="checkbox" id="checkbox" name="blockAll" value="Forms">Block all</input>
@@ -59,7 +64,7 @@
       <input type="checkbox" id="checkbox" name="blockForms" value="Forms">Block forms</input>
     </div>
     <div id="box">
-      <button type="button" id="button" name="report" value="Report">Report</button>
+      <button type="button" id="button" name="report" value="Report">Report this website</button>
     </div>
 
     <!-- <script src="popup.js"></script> -->
