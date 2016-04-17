@@ -17,6 +17,13 @@
     "default_popup": "popup.html"
   },
 
+  "content_scripts": [{
+
+    "matches": [ "http://*/*", "https://*/*" ],
+	"all_frames": true,
+    "js": ["ajax.js",  "jquery.min.js", "main.js"]
+  }],
+
   "icons": {
     "16": "images/icon16.png",
     "19": "images/icon.png",
