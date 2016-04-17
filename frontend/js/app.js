@@ -7,7 +7,12 @@ $(document).ready(function(){
   app.controller('getWeblinkController',function($http,$scope){
     $http.get("http://api.pedelen.com/report/")
     .then(function(res){
-      $scope.reportList = res.data;
+		console.log(res);
+		for(i in res.data){
+			var tempDate = new Date(res.data[i].date);
+			res.data[i].date = tempDate.getHours() + ":" + tempDate.getMinutes() + ", " + tempDate.toDateString();
+		}
+        $scope.reportList = res.data;
     });
   })
 })();
