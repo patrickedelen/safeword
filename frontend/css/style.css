@@ -119,3 +119,9 @@ video#bgvid {
 	-moz-animation-duration:1s;
 	animation-duration:1s;
 }
+
+.img-circle {
+    border-radius: 50%;
+    height="42";
+    width="42";
+}
