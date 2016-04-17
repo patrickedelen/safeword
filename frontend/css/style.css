@@ -16,7 +16,10 @@ body{
 .card{
   border-radius: 10px;
   box-shadow: 2px 4px 12px #888888;
+  opacity: 0.85;
+  overflow: auto;
 }
+
 video#bgvid {
     position: fixed;
     top: 50%;
