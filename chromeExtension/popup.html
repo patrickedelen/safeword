@@ -6,7 +6,7 @@
  -->
 <html>
   <head>
-    <style>
+	<style>
       * {
         font-family: 'Roboto', sans-serif;
         font-size: 100%;
@@ -67,8 +67,10 @@
       <a href="http://safeword.pedelen.com/report.html" target='_blank' name="Search">Search on Safe Word</a>
     </div>
     <div id="box">
-      <input type="checkbox" name="blockAll" value="Forms">Block all insecurites</input>
-      <input type="checkbox" name="blockForms" value="All">Block insecure forms</input>
+	  <label for="blockAll">Block all insecurities</label>
+      <input type="checkbox" id="blockAll">
+      <label for="blockForms">Block insecure forms</label>
+	  <input type="checkbox" id="blockForms">
     </div>
     <div id="box">
       <table style="width:100%">
@@ -90,5 +92,9 @@
 
     <!-- <script src="popup.js"></script> -->
   </head>
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="util.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
 </html>
 

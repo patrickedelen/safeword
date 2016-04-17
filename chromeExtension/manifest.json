@@ -18,7 +18,8 @@
   },
 
   "background": {
-	  "page": "util.js"
+	  "page": "util.js",
+	  "page": "popup.js"
   },
 
   "content_scripts": [{
