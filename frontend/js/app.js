@@ -1,5 +1,17 @@
 $(document).ready(function(){
+        $(".page").css("display", "none");
+        $(".page").fadeIn(1000);
         $(".button-collapse").sideNav();
+
+        $("a.transition").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $(".page").fadeOut(800, redirectPage);
+
+        function redirectPage(){
+          window.location = linkLocation;
+        }
+    });
 });
 
 (function(){
