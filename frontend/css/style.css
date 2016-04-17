@@ -3,11 +3,6 @@ html {
     font-family: GillSans, Calibri, Trebuchet, sans-serif;
   }
 
-/* Search Bar */
-nav{
-  background-color: #20B2AA;
-}
-
 body{
   height:auto;
   margin:0;
@@ -15,7 +10,7 @@ body{
 
 .card{
   border-radius: 10px;
-  box-shadow: 2px 4px 12px #888888;
+  /*box-shadow: 2px 4px 12px #888888;*/
   opacity: 0.85;
   overflow: auto;
 }
@@ -120,8 +115,6 @@ video#bgvid {
 	animation-duration:1s;
 }
 
-.img-circle {
-    border-radius: 50%;
-    height="42";
-    width="42";
+h5{
+  text-align: center;
 }
