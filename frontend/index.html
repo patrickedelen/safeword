@@ -18,25 +18,23 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
    </head>
-   <script>
-    $(document).ready(function(){
-            $(".button-collapse").sideNav();
-    });
-  </script>
 
    <body ng-app="safeword" >
+
+     <!-- nav bar  -->
      <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="">About</a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="">I love Brian <3</a></li>
-      </ul>
-    </div>
-  </nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">REPORTED LINK</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="">About</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
 
      <!-- <div ng-controller="getLinesController">
        <ul>
@@ -49,30 +47,26 @@
       <div class="container">
 
         <div class="row">
-
-        <!-- Controls how many cards will the website display -->
-        <!-- Install CardController here -->
-        <div ng-controller="getWeblinkController">
-          <div ng-repeat="webLink in reportList">
-          <!-- Each card representing the link and the information -->
-          <!-- Repeat this  -->
-           <div class="col s12 m6">
-             <div class="card blue-grey darken-1">
-               <div class="card-content white-text">
-                 <span class="card-title">{{webLink.url}}</span>
-                 <!-- <p>{{webLink.type}}</p> -->
-                 <p ng-show="webLink.type==1">SSL NOT ENABLED</p>
-                 <p ng-show="webLink.type==2">LOGIN NOT SECURED</p>
-               </div>
-               <div class="card-action">
-                 <p>{{webLink.date}}</p>
+            <div ng-controller="getWeblinkController">
+              <div ng-repeat="webLink in reportList">
+              <!-- Each card representing the link and the information -->
+              <!-- Repeat this  -->
+               <div class="col s12 m6">
+                 <div class="card blue-grey darken-1">
+                   <div class="card-content white-text">
+                     <span class="card-title">{{webLink.url}}</span>
+                     <!-- <p>{{webLink.type}}</p> -->
+                     <p ng-show="webLink.type==1">SSL NOT ENABLED</p>
+                     <p ng-show="webLink.type==2">LOGIN NOT SECURED</p>
+                   </div>
+                   <div class="card-action">
+                     <p>{{webLink.date}}</p>
+                   </div>
+                 </div>
                </div>
              </div>
-           </div>
-         </div>
-
-        </div>
-      </div>
+            </div>
+          </div>
         <!-- Search bar for searching the reported domains -->
         <!-- <nav>
          <div class="nav-wrapper">
