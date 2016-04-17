@@ -6,32 +6,48 @@
  -->
 <html>
   <head>
-    <title>Getting Started Extension's Popup</title>
+    <title>Safe Wrd</title>
     <style>
-      body {
-        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+      * {
+        font-family: 'Roboto', sans-serif;
         font-size: 100%;
+        width: 300px;
+        margin: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
       }
-      #status {
-        /* avoid an excessively wide status text */
-        white-space: pre;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        max-width: 400px;
+      #title {
+        margin-top: -20px;
+        font-size: 200%;
+        color: white; 
+        background-color: #20b2aa;
+        text-align: center;
       }
+      #box {
+        margin: 10px auto;
+        width: 90%;
+        padding-left: 10px;
+        background-color: #546e7a;
+        color: white; 
+      }
+      
     </style>
 
+    <div id="title">
+      SAFE WORD
+    </div>
+    <br>
+    <div id="box">
+    <p>This is some text</p>
+    </div>
     <!--
       - JavaScript and HTML must be in separate files: see our Content Security
       - Policy documentation[1] for details and explanation.
       -
       - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
      -->
-    <script src="popup.js"></script>
+
+    <!-- <script src="popup.js"></script> -->
   </head>
-  <body>
-    <div id="status"></div>
-    <img id="image-result" hidden>
-  </body>
 </html>
 
