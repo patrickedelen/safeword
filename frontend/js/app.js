@@ -3,7 +3,34 @@ $(document).ready(function(){
 });
 
 (function(){
-  var app = angular.module('safeword',[]);
+  var app = angular.module('safeword',['ngRoute', 'ngAnimate']);
+  app.config(function($routeProvider){
+        $routeProvider
+        // home page
+        .when('/', {
+            templateUrl: 'index.html',
+            controller: 'mainController'
+        })
+
+        // about page
+        .when('/about', {
+            templateUrl: 'about.html',
+            controller: 'aboutController'
+        })
+
+  });
+
+  // CONTROLLERS ============================================
+  // home page controller
+  app.controller('mainController', function($scope) {
+      $scope.pageClass = 'page-home';
+  });
+
+  // about page controller
+  app.controller('aboutController', function($scope) {
+      $scope.pageClass = 'page-about';
+  });
+
   app.controller('getWeblinkController',function($http,$scope){
     $http.get("http://api.pedelen.com/report/")
     .then(function(res){
